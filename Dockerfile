@@ -21,7 +21,7 @@ RUN chown play:play /home/play/Code
 # Install dependencies
 ENV ACTIVATOR_VERSION 1.3.6
 RUN apt-get update && \
-    apt-get install -y git build-essential curl wget zip unzip software-properties-common
+    apt-get install -y git build-essential curl wget zip unzip software-properties-common nodejs
 WORKDIR /tmp
 
 # Install play
